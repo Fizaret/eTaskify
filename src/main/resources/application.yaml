@@ -1,0 +1,17 @@
+
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:1010/eTaskify?createDatabaseIfNotExist=true
+    username: root
+    password: password
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    open-in-view: true
+  security:
+    secret: Qi5ncmIndCxiLHI7dCx0cjZ0NGI4NzQxcnJ0YjR0cmViZWE4NDg2NHRiODQ2cjQ2dHI0Yg==
+    token:
+      expirationTime: 120
